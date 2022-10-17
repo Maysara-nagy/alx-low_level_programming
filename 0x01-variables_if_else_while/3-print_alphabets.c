@@ -18,7 +18,7 @@ int main(void)
 	while (chUPPER <= 'Z')
 	{
 		putchar(chUPPER);
-		putchar++;
+		chUPPER++;
 	}
 	putchar('\n');
 	return (0);
