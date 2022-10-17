@@ -9,17 +9,17 @@ int main(void)
 {
 	int ch = 'a';
 	int chUPPER = 'A';
+
 	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
 	while (chUPPER <= 'Z')
-        {
-                putchar(chUPPER);
-                chUPPER++;
-        }
-
+	{
+		putchar(chUPPER);
+		putchar++
+	}
 	putchar('\n');
 	return (0);
 }
