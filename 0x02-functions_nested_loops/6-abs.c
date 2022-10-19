@@ -8,12 +8,10 @@
 
 int _abs(int t)
 {
-	int sum = t * (-1);
-
 	if (t == 0)
-		return (_putchar('0'));
+		return (0);
 	else if (t < 0)
-		return (_putchar(sum + '0'));
+		return (-t);
 	else
-		return (_putchar(t + '0'));
+		return (t);
 }
