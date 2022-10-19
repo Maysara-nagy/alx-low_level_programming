@@ -10,7 +10,8 @@ int print_last_digit(int n)
 {
 	int sum = n % 10;
 
-	if (n < 0)
-		n *= -1;
-	return (_putchar(sum + '0'));
+	if (sum < 0)
+		sum *= -1;
+	_putchar(sum + '0')
+	return (0);
 }
