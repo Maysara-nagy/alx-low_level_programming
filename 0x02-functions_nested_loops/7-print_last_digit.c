@@ -11,7 +11,8 @@ int print_last_digit(int n)
 	int sum = n % 10;
 	
 	if (sum < 0)
-		return (sum *= -1);
-	else
-		return (sum);
+		n *= -1;
+
+	_puthcar(sum + '0');
+	return (0);
 }
