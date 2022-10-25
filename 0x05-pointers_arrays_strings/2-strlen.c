@@ -6,7 +6,7 @@
  * Return: always the len
  */
 
-int _strlen(*s)
+int _strlen(char *s)
 {
 	int len = 0;
 
