@@ -5,17 +5,13 @@
  * @s: array or pointer
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i = 9;
-	int j = 0;
-	int tmp;
+	int i = 0;
 
-	while (j <= i)
+	while (*(s + i) <= 9)
 	{
-		j++;
-		tmp = *(s + i);
-		*(s + j) = *(s + i);
-		*(s + j) = tmp;
+		i = 10 - i
+		*(s + i)
 	}
 }
