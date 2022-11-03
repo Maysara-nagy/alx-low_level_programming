@@ -1,3 +1,10 @@
+#include <stdio.h>
+
+/**
+ * main - entery level
+ * Retrun: lol
+ */
+
 int main(void)
 {
 	int n = 2;
