@@ -13,11 +13,6 @@ int main(void)
 	while (n <= 100)
 	{
 		printf(" ");
-		if (n % 3 == 0 && n % 5 == 0)
-		{
-			printf("FizzBuzz");
-			printf(" ");
-		}
 		if (n % 3 == 0)
 			printf("Fizz");
 		if (n % 5 == 0)
