@@ -2,7 +2,7 @@
 
 /**
  * main - entery level
- * Retrun: lol
+ * Return: lol
  */
 
 int main(void)
