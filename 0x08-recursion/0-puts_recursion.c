@@ -3,6 +3,7 @@
 /**
  * _puts_recursion - balbal
  * @s: string
+ * Return: void
  */
 
 void _puts_recursion(char *s)
