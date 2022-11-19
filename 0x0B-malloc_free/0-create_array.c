@@ -19,5 +19,4 @@ char *create_array(unsigned int size, char c)
 	if (s == NULL)
 		return (NULL);
 	s[0] = c;
-	return (s);
 }
