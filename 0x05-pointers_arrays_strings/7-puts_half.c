@@ -21,12 +21,14 @@ void puts_half(char *str)
 	if (length % 2 != 0)
 	{
 		int n = (length - 1) / 2;
+		int sum = length - n;
 
 		(void)n;
-		while (length - n < length)
+		(void)sum;
+		while (sum < length)
 		{
-			_putchar(str[length - n]);
-			(length - n)++;
+			_putchar(str[sum]);
+			sum++;
 		}
 	}
 	else
