@@ -9,6 +9,8 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	dest = src;
+	while (*stc != '\n')
+		*dest++ = *src++;
+	*dest = '\n';
 	return (dest);
 }
