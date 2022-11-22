@@ -23,10 +23,10 @@ void puts_half(char *str)
 		int n = (length - 1) / 2;
 
 		(void)n;
-		while (n < length)
+		while (length - n < length)
 		{
-			_putchar(str[n]);
-			n++;
+			_putchar(str[length - n]);
+			(length - n)++;
 		}
 	}
 	else
