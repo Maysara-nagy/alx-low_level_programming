@@ -22,6 +22,7 @@ void puts_half(char *str)
 	{
 		int n = (length - 1) / 2;
 		
+		(void)n;
 		_putchar('n');
 	}
 	else
