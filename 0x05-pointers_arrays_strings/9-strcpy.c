@@ -4,11 +4,11 @@
  * _strcpy - function to copy strings
  * @dest: the copy destination
  * @src: the string wanted to get copy
- * Retrun: always fking dest
+ * Return: always fking dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
 	dest = src;
-	return (dest);
+	return (src);
 }
