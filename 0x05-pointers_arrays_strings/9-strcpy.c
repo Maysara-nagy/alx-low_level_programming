@@ -5,7 +5,7 @@
  * @dest: the copy destination
  * @src: the string wanted to get copy
  * Retrun: always fking dest
- * /
+ */
 
 char *_strcpy(char *dest, char *src)
 {
