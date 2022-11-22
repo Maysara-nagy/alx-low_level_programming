@@ -14,10 +14,10 @@ void print_array(int *a, int n)
 	while (i < n)
 	{
 		if (i == n)
-			printf("%d", str[i]);
+			printf("%d", a[i]);
 		else
 		{
-			printf("%d ,", str[i]);
+			printf("%d ,", a[i]);
 			i++;
 		}
 	}
