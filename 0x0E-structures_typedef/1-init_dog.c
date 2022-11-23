@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * init_dog: function to init the struct dog
+ * init_dog - function to init the struct dog
  * @d: an element
  * @name: name element
  * @age: age
@@ -10,9 +10,9 @@
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
-{	
+{
 	if (d != NULL)
-	{	
+	{
 		d->name = name;
 		d->age = age;
 		d->owner = owner;
