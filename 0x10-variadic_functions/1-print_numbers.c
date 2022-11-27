@@ -6,7 +6,6 @@
  * print_numbers - function to print numbers
  * @n: number of arguments
  * @separator: string to seperate between numbers
- * Return: always 0
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -19,10 +18,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			printf("%s%u", separator, n);
+			printf("%s%u", separator, va_arg(args, int));
 		}
 		va_end(args);
 		printf("\n");
 	}
-	return (0);
 }
