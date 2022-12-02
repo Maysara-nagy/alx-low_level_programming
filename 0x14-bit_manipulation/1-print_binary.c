@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 	unsigned int i, mask;
 
 	mask = 1;
-	mask << 63;
+	mask <<= 63;
 	if (n == 0)
 		_putchar('0');
 	for (i = 0; i < mask - 1; i++)
