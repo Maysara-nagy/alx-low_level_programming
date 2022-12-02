@@ -9,12 +9,13 @@ void print_binary(unsigned long int n)
 {
 	unsigned int i, mask;
 
-	mask = 1 << 63;
+	mask = 1;
+	mask << 63;
 	if (n == 0)
 		_putchar('0');
 	for (i = 0; i < mask - 1; i++)
 	{
-		if (n & mask == 0)
+		if ((n & mask) == 0)
 			_putchar('0');
 		else
 			_putchar('1');
