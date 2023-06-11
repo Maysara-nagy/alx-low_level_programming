@@ -1,20 +1,50 @@
 #include "main.h"
 
 /**
- * _pow_recursion - blabla
- * @x: string
- * @y: number
- * Return: blabla
+ * _strlen_recursion - size
+ * @s: pointer to string params
+ * Return: recursion
  */
 
-int _pow_recursion(int x, int y)
+int _strlen_recursion(char *s)
 {
-	if (y < 0)
+	if (!*s)
 	{
-		return (-1);
+		return (0);
 	}
-	else if (y != 0)
-		return (x * _pow_recursion(x, y - 1));
-	else
+	return (1 + _strlen_recursion(++s));
+}
+
+/**
+ * p1 - palindrome
+ * @s: pointer to string
+ * @l: position
+ * Return: boolena
+ */
+
+int p1(char *s, int l)
+{
+	if (l < 1)
+	{
 		return (1);
+	}
+
+	if (*s == *(s + l))
+	{
+		return (p1(s + 1, l - 2));
+	}
+	return (0);
+}
+
+/**
+ * is_palindrome - palindrome
+ * @s: pointer to string
+ * Return: recursion
+ */
+
+int is_palindrome(char *s)
+{
+	int len = _strlen_recursion(s);
+
+	return (p1(s, len - 1));
 }

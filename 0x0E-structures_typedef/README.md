@@ -1,1 +1,1 @@
-my structures and typedef directory
+# c structures and typedef

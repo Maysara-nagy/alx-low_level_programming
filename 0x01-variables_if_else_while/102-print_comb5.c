@@ -1,23 +1,31 @@
 #include <stdio.h>
-
 /**
- * main - entry point
- * Return: always 0
+ * main - create 2 pairs of number
+ * Return: 0
  */
-
 int main(void)
 {
-	int a = 0;
+	int i, j;
 
-	while (a < 10)
+	for (i = 0; i <= 99; i++)
 	{
-		putchar(a + '0');
-		if (a < 9)
+		for (j = i; j <= 99; j++)
 		{
-			putchar(',');
-			putchar(' ');
+			if (j != i)
+			{
+				putchar(i / 10 + 48);
+				putchar(i % 10 + 48);
+				putchar(' ');
+				putchar(j / 10 + 48);
+				putchar(j % 10 + 48);
+
+				if (i * 100 + j != 9899)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);

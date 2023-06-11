@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - printf alphabet in lowercase
+ * print_alphabet_x10 - func
+ *
+ * Return - 0
  */
 void print_alphabet_x10(void)
 {
-	int i = 0;
-
-	while (i < 10)
-	{
-		int ch = 'a';
-
-		while (ch <= 'z')
-		{
-			_putchar(ch);
-			ch++;
-		}
-		_putchar('\n');
-		i++;
-	}
+int b = 0;
+while (b < 10)
+{
+char a = 'a';
+while (a <= 'z')
+{
+_putchar(a);
+a++;
+}
+_putchar('\n');
+b++;
+}
 }

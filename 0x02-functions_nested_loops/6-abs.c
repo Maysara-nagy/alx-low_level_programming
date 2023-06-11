@@ -1,17 +1,16 @@
 #include "main.h"
-
 /**
- * _abs - absolute value of an integer
- * Return: always n
- * @t: parameter
+ * _abs - returns absolute value of an int
+ * @n: integer from which to get an absolute value
+ * Return: Void.
  */
 
-int _abs(int t)
+int _abs(int n)
 {
-	if (t == 0)
-		return (0);
-	else if (t < 0)
-		return (-t);
-	else
-		return (t);
+
+	if (n < 0)
+	{
+		return (n * -1);
+	}
+	return (n);
 }

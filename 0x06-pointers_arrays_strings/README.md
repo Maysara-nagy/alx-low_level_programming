@@ -1,1 +1,1 @@
-my more pointers and arrays and strings dir
+My read me file for 0x06-pointers_arrays_strings
